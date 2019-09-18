@@ -1,0 +1,84 @@
+@import "./reset.css";
+body {
+    background: #33aac5;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.todo-container {
+    text-align: center;
+    padding: 40px;
+    h1 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 20px;
+    }
+    .todo-text {
+        p {
+            margin: 12px;
+            &:first-child {
+                color: yellow;
+            }
+            &:nth-child(2) {
+                color: #47de47;
+            }
+            &:last-child {
+                color: #333;
+            }
+        }
+    }
+    .todo-input {
+        width: 100%;
+        display: inline-block;
+        .input-box {
+            width: calc(100% - 5% - 5px);
+            height: 30px;
+            border-radius: 2px;
+            border: navajowhite;
+            padding-left: 12px;
+            box-sizing: border-box;
+        }
+        .input-btn {
+            width: 5%;
+            height: 30px;
+            border-radius: 2px;
+            border: navajowhite;
+            background: steelblue;
+        }
+    }
+    .todos {
+        padding-top: 20px;
+        max-width: 70%;
+        margin: 0 auto;
+        li {
+            text-align: left;
+            background: #50dfff;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 2px;
+            border: navajowhite;
+            padding: 0 12px;
+            box-sizing: border-box;
+            color: #fff;
+            margin: 12px 0;
+            font-weight: 500;
+        }
+        &-text {
+            text-align: left;
+        }
+        button {
+            float: right;
+            margin: 0px;
+            background: transparent;
+            border: navajowhite;
+            height: 40px;
+            font-size: 18px;
+        }
+    }
+}

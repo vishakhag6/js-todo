@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-container">
+            <h1>Work To-Dos</h1>
+            <div class="todo-text">
+                <p>Enter text in the input field to add items to your list</p>
+                <p>Click the item to mark it as complete</p>
+                <p>Click the "X" to remove the item from your list</p>
+            </div>
+
+            <div class="todo-input">
+                <input id="item" class="input-box" placeholder="New Item...">
+                <button id="add" onclick="addItem()" class="input-btn">Add</button>
+
+                <div id="todos" class="todos"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
